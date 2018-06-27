@@ -9,8 +9,8 @@ build:
         - script:
             name: push documentation
             code: code |
-                mkdir -p sync/drivers/ && cp -r . sync/drivers/ &&
+                mkdir -p ../sync/drivers/ && cp -r . ../sync/drivers/ &&
                 aws configure set aws_access_key_id $AWS_KEY_ID && \
                 aws configure set aws_secret_access_key $AWS_SECRET_KEY && \
-                ls sync/drivers
+                ls -R ../sync/
                 #aws s3 sync sync/ s3://docs.forward-loop.com
