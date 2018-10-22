@@ -3,6 +3,11 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+{% extends "!layout.html" %}
+{% block extrahead %}
+<meta name="google-site-verification" content="vlIl5j7EJBIRii2FgCcWd5onxPfhiuTn7ivaJ2qzB4A" />
+{% endblock %}
+
 ==========================
 Forward Loop Documentation
 ==========================
